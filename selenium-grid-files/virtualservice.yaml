@@ -1,0 +1,18 @@
+apiVersion: networking.istio.io/v1beta1
+kind: VirtualService
+metadata:
+  name: selenium-grid-vs
+spec:
+  hosts:
+  - "*"
+  gateways:
+  - selenium-grid-gw
+  http:
+  - match:
+    - uri:
+        prefix: "/"
+    route:
+    - destination:
+        host: selenium-grid-hub
+        port:
+          number: 4444
