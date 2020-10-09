@@ -14,12 +14,4 @@ module.exports = (function(settings) {
     settings.selenium.host = process.env.SELENIUM_PORT;
   }
   return settings;
-}),
-{
-  beforeEach: function (browser, done) {
-    require('nightwatch-video-recorder').start(browser, done)
-  },
-  afterEach: function (browser, done) {
-    require('nightwatch-video-recorder').stop(browser, done)
-  }
-}(require('./nightwatch'));
+})(require('./nightwatch'))

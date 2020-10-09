@@ -2,6 +2,7 @@ FROM node:12
 
 WORKDIR /usr/src/app
 COPY package*.json ./
+COPY pages/ pages
 COPY tests/ tests
 COPY nightwatch* ./
 RUN npm install
