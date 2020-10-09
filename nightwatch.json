@@ -19,13 +19,25 @@
  
   "test_settings" : {
     "default" : {
-      "launch_url" : "http://169.46.65.67",
+      "launch_url" : "http://www.google.com",
       "selenium_port"  : 80,
       "selenium_host"  : "169.46.65.67",
       "silent": false,
       "screenshots" : {
         "enabled" : true,
-        "path" : ""
+        "path" : "reports/screenshot"
+      },
+      "videos": {
+        "fileName": "example",
+        "enabled": true,          
+        "delete_on_pass": false,   
+        "dir": "reports/videos",  
+        "ext": ".mp4",            
+        "resolution": "1440x900", 
+        "fps": 15,                
+        "hostname": "localhost",  
+        "display": "0",           
+        "pixelFormat": "yuv420p"  
       },
       "username" : "",
       "access_key" : "",
