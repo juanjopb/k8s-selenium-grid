@@ -19,8 +19,8 @@ module.exports = {
 
   "selenium": {
       "start_process": false,
-      "host" : "169.46.65.67",
-      "port" : 80,
+      "host" : process.env.SELENIUM_REMOTE_HOST,
+      "port" : process.env.SELENIUM_REMOTE_PORT,
       "cli_args" : {
         "webdriver.chrome.driver" : "./bin/chromedriver"
       }
