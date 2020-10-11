@@ -10,11 +10,11 @@ Also, the artifacts to run an E2E test using _**nightwatch.js**_ over a remote (
 
 ## Prepare and run the test
 Clone the repo and set parameters on the file *config.conf*
-**_selenium_remote_host_** if you have a Remote selenium, add the ip address or dns (default localhost)
-**_selenium_remote_port_** if you have a Remote selenium, add the port (default 4444)
-**_ibmcloud_username_** user to Log In on IBM Cloud 
-**_ibmcloud_password_** password to Log In on IBM Cloud 
-**_ibmcloud_cos_bucket_** bucket name to upload the results on IBM Cloud 
+- **_selenium_remote_host_** if you have a Remote selenium, add the ip address or dns (default localhost)
+- **_selenium_remote_port_** if you have a Remote selenium, add the port (default 4444)
+- **_ibmcloud_username_** user to Log In on IBM Cloud 
+- **_ibmcloud_password_** password to Log In on IBM Cloud 
+- **_ibmcloud_cos_bucket_** bucket name to upload the results on IBM Cloud 
 
 After set the parameters run the script `./scripts/start.sh`
 
