@@ -1,5 +1,5 @@
 # k8s-selenium-grid
-In this repository, you will find the Kubernetes files to deploy selenium-grid to k8s. Follow the instructions on [this blog] (https://medium.com/@juanjosepb/selenium-grid-running-on-ibm-cloud-kubernetes-service-iks-f65b6bf699fc "this blog")
+In this repository, you will find the Kubernetes files to deploy selenium-grid to k8s. Follow the instructions on [this blog] (https://medium.com/@juanjosepb/selenium-grid-running-on-ibm-cloud-kubernetes-service-iks-f65b6bf699fc)
 Also, the artifacts to run an E2E test using _**nightwatch.js**_ over a remote (or local) selenium grid. You could provide remote selenium Otherwise local selenium will be started and the test will run a test with differents uses cases on the test page http://www.automationpractice.com.
 
 
