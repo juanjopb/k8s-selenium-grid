@@ -1,7 +1,7 @@
 
 module.exports = {
   
-    'Test Case: Log into automationpractice.com, make actions, take screenshots': (browser) => {
+    'Test Case:Check automationpractice.com login field, take screenshots': (browser) => {
         browser
             .url('http://automationpractice.com')
             .waitForElementVisible('body', 1000)
@@ -20,7 +20,7 @@ module.exports = {
           .saveScreenshot('./tests_output/screenshots/02loginsuccess.png')
   },
   
-  'Test Case 3: Log in on automationpractice.com, make actions, take screenshots': (browser) => {
+  'Test Case 3: Search Skirt, show the results, take screenshots': (browser) => {
       browser
           .pause(1000)    
           .setValue('input[name=search_query]', 'Skirt')
@@ -30,7 +30,7 @@ module.exports = {
           .saveScreenshot('./tests_output/screenshots/03searchvisible.png')
   },
   
-  'Test Case 4: Log in on automationpractice.com, make actions, take screenshots': (browser) => {
+  'Test Case 4: Add the product to Cart, take screenshots': (browser) => {
     browser
         .pause(1000)
         .assert.elementPresent('a[class="product_img_link"]')
@@ -42,7 +42,7 @@ module.exports = {
         .saveScreenshot('./tests_output/screenshots/04addtocart.png')  
   },
   
-  'Test Case 5: Log in on automationpractice.com, make actions, take screenshots': (browser) => {
+  'Test Case 5: Back to the store, take screenshots': (browser) => {
     browser
       .pause(1000)
       .assert.elementPresent('span[class="continue btn btn-default button exclusive-medium')
@@ -51,7 +51,7 @@ module.exports = {
       .saveScreenshot('./tests_output/screenshots/05backshopping.png')
   },
   
-  'Test Case 6: Log in on automationpractice.com, make actions, take screenshots': (browser) => {
+  'Test Case 6: Show the homepage take screenshots': (browser) => {
     browser
       .pause(1000)
       .assert.elementPresent('div[id="header_logo')
@@ -59,7 +59,7 @@ module.exports = {
       .saveScreenshot('./tests_output/screenshots/06backmystore.png')
   },
   
-  'Test Case 7: Log in on automationpractice.com, make actions, take screenshots': (browser) => {
+  'Test Case 7: Log out of the store, take screenshots': (browser) => {
     browser
         .pause(1000)
         .assert.elementPresent( 'a[class="logout"]') 
