@@ -68,6 +68,7 @@ on the file _nightwatch.conf.js_ be sure you have set the parameters _host_ and 
 `./node_modules/.bin/nightwatch` 
 
 ## To build the Dockerfiles
+
 ### Create Dockerfile
 Clone the repository, located on the root of the repo.
 `docker build -t nightwatch-test -f ./nightwatch/Dockerfile .`
