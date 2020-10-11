@@ -1,10 +1,10 @@
 {
   "name": "JS-Nightwatch.js",
   "version": "0.0.0",
-  "description": "NightWatch examples for LambdaTest",
+  "description": "NightWatch examples running with selenium",
   "main": "",
   "scripts": {
-    "test": "./node_modules/.bin/nightwatch -e chrome,firefox,edge,safari tests"
+    "test": "./node_modules/.bin/nightwatch"
   },
   "devDependencies": {
     "nightwatch": "^1.0.18"

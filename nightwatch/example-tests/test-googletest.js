@@ -6,9 +6,11 @@ module.exports = {
  
     'Google': function(client) {
         client
-            .url('https://www.google.com/ncr')
+            .url('https://www.google.com')
 //            .waitForElementVisible('body', 10000)
-            .setValue('input[type=text]', 'LambdaTest\n')
+//            .assert.visible('input[type=text]')
+//            .click('input[type=text]')
+            .setValue('input[type=text]', 'LambdaTest')
             .pause(1000)
             .assert.title('Google')
             .end();
