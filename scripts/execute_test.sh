@@ -2,12 +2,16 @@
 OUTPUT_FOLDER=./tests_output/screenshots/*
 timestamp=$(date +"%Y%m%d_%H%M")
 
+echo "Starting Test"
 ./node_modules/.bin/nightwatch
 
-printf '${IBMCLOUD_PASSWORD}\n' | ibmcloud login -a cloud.ibm.com -r us-south -u ${IBMCLOUD_USER}
+#echo -A '${IBMCLOUD_PASSWORD}' | ibmcloud login -a cloud.ibm.com -r us-south -u ${IBMCLOUD_USER}
+echo "Logging to IBM Cloud"
+ibmcloud login --apikey "${IBMCLOUD_APIKEY}" -a "https://cloud.ibm.com" -r us-south
 sleep 30
 export COS_ADMIN_TOKEN=$(ibmcloud iam oauth-tokens | grep IAM | awk '{print($4)}')
 
+echo "Upload files"
 for file in $OUTPUT_FOLDER
 do
   echo "Processing $file file..."
