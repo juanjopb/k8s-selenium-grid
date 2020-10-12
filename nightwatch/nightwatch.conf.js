@@ -1,12 +1,4 @@
 module.exports = {
-  beforeEach: function (browser, done) {
-    require('nightwatch-record').start(browser, done);
-  },
-
-  afterEach: function (browser, done) {
-    require('nightwatch-record').stop(browser, done);
-  },
-
   "src_folders": ["tests"],
   "page_objects_path": "",
   "globals_path": "",
@@ -25,8 +17,6 @@ module.exports = {
         "webdriver.chrome.driver" : "./bin/chromedriver"
       }
   },
-
-
 
   "test_settings": {
       "default": {

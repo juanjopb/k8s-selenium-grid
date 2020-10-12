@@ -12,26 +12,26 @@ module.exports = {
             .pause(1000)
     },
     
-    'Test Case 2: Log in on automationpractice.com, make actions, take screenshots': (browser) => {
+  'Test Case 2: Log in on automationpractice.com, make actions, take screenshots': (browser) => {
       browser
-          .setValue('input[id=email]', 'testselenium@test.com')
-          .setValue('input[id=passwd]', 'K8S@K8s')
-          .click('button[name=SubmitLogin]')
-          .saveScreenshot('./tests_output/screenshots/02loginsuccess.png')
+        .setValue('input[id=email]', 'testselenium@test.com')
+        .setValue('input[id=passwd]', 'K8S@K8s')
+        .click('button[name=SubmitLogin]')
+        .saveScreenshot('./tests_output/screenshots/02loginsuccess.png')
   },
   
   'Test Case 3: Search Skirt, show the results, take screenshots': (browser) => {
       browser
-          .pause(1000)    
-          .setValue('input[name=search_query]', 'Skirt')
-          .click('button[name=submit_search]')
-          .pause(500)
-          .assert.title('Search - My Store')
-          .saveScreenshot('./tests_output/screenshots/03searchvisible.png')
+        .pause(1000)    
+        .setValue('input[name=search_query]', 'Skirt')
+        .click('button[name=submit_search]')
+        .pause(500)
+        .assert.title('Search - My Store')
+        .saveScreenshot('./tests_output/screenshots/03searchvisible.png')
   },
   
   'Test Case 4: Add the product to Cart, take screenshots': (browser) => {
-    browser
+      browser
         .pause(1000)
         .assert.elementPresent('a[class="product_img_link"]')
         .assert.elementPresent('a[class="button ajax_add_to_cart_button btn btn-default"]')
@@ -43,24 +43,24 @@ module.exports = {
   },
   
   'Test Case 5: Back to the store, take screenshots': (browser) => {
-    browser
-      .pause(1000)
-      .assert.elementPresent('span[class="continue btn btn-default button exclusive-medium')
-      .click('span[class="continue btn btn-default button exclusive-medium')
-      .pause(5000)
-      .saveScreenshot('./tests_output/screenshots/05backshopping.png')
+      browser
+        .pause(1000)
+        .assert.elementPresent('span[class="continue btn btn-default button exclusive-medium')
+        .click('span[class="continue btn btn-default button exclusive-medium')
+        .pause(5000)
+        .saveScreenshot('./tests_output/screenshots/05backshopping.png')
   },
   
   'Test Case 6: Show the homepage take screenshots': (browser) => {
-    browser
-      .pause(1000)
-      .assert.elementPresent('div[id="header_logo')
-      .click('a[title="My Store"]')
-      .saveScreenshot('./tests_output/screenshots/06backmystore.png')
+      browser
+        .pause(1000)
+        .assert.elementPresent('div[id="header_logo')
+        .click('a[title="My Store"]')
+        .saveScreenshot('./tests_output/screenshots/06backmystore.png')
   },
   
   'Test Case 7: Log out of the store, take screenshots': (browser) => {
-    browser
+      browser
         .pause(1000)
         .assert.elementPresent( 'a[class="logout"]') 
         .click('a[class="logout"]')
