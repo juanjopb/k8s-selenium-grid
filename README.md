@@ -33,7 +33,7 @@ Clone the repo and set parameters on the file **config.conf**
 - **_selenium_remote_host_** if you have a Remote selenium, add the ip address or dns (default localhost)
 - **_selenium_remote_port_** if you have a Remote selenium, add the port (default 4444)
 - **_ibmcloud_username_** user to Log In on IBM Cloud 
-- **_ibmcloud_password_** password to Log In on IBM Cloud 
+- **_ibmcloud_apikey_** APIKEY generated on IAM Cloud to allow upload the results.
 - **_ibmcloud_cos_bucket_** bucket name to upload the results on IBM Cloud 
 
 After set the parameters run the script `./scripts/start.sh`
