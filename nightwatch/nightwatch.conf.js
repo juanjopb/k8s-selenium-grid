@@ -24,22 +24,27 @@ module.exports = {
           "enabled": true,
           "path": 'tests_output/screenshots',
           },
-          "videos": {
-            "fileName": "example", // Required field
-            "nameAfterTest": true,
-            "format": "mp4",
-            "enabled": true,
-            "deleteOnSuccess": false,
-            "path": "tests_output/screenshots",
-            "resolution": "1440x900",
-            "fps": 15,
-            "input": "video=screen-capture-recorder",
-            "videoCodec": "mpeg4"
-          },
           "desiredCapabilities": {
               "browserName": "chrome"
           }
       }
+  },
+  "globals": {
+    "waitForConditionTimeout": 15000,
+    "test_settings":{
+    "videos": {
+      "fileName": "example", // Required field
+      "nameAfterTest": true,
+      "format": "mp4",
+      "enabled": true,
+      "deleteOnSuccess": false,
+      "path": "tests_output/screenshots",
+      "resolution": "1366x768",
+      "fps": 7,
+      "input": "",
+      "videoCodec": "libx264",
+      }
+    }
   }
 }
 

@@ -1,7 +1,7 @@
 
 module.exports = {
-  
-    'Test Case:Check automationpractice.com login field, take screenshots': (browser) => {
+
+  'Test Case:Check automationpractice.com login field, take screenshots': (browser) => {
         browser
             .url('http://automationpractice.com')
             .waitForElementVisible('body', 1000)
