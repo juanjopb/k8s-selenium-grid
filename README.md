@@ -48,10 +48,10 @@ With this option you could run the _nightwach.js_ test on your own workstation.
 
 ### Prepare install and Run
 Clone the repo and set parameters on the file *config.conf*
-`cd nigthwatch`
-`npm install` 
-`npm install -g nightwatch`
-`npm install --save-dev nightwatch-record selenium-webdriver chromedriver`
+- `cd nigthwatch`
+- `npm install` 
+- `npm install -g nightwatch`
+- `npm install --save-dev nightwatch-record selenium-webdriver chromedriver`
 
 on the file _nightwatch.conf.js_ be sure you have set the parameters _host_ and _port_
 
@@ -65,6 +65,8 @@ on the file _nightwatch.conf.js_ be sure you have set the parameters _host_ and 
       }
   },
 ```
+Go to the folder _nightwatch_ `cd nightwatch` and run `docker-compose up` after all services show in running state, you are able to run nightwatch
+
 `./node_modules/.bin/nightwatch` 
 
 ## To build the Dockerfiles
