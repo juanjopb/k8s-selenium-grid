@@ -11,7 +11,7 @@ fi
 echo "Start to Build nightwatch test Dockerfile"
 docker build -t nightwatch -f ./nightwatch/Dockerfile .
 echo "Running nightwatch Dockerfile"
-docker run -it --network="host" --env "SELENIUM_REMOTE_HOST=${selenium_remote_host}" --env "SELENIUM_REMOTE_PORT=${selenium_remote_port}" --env "IBMCLOUD_USER=${ibmcloud_username}" --env "IBMCLOUD_APIKEY=${ibmcloud_apikey}" --env "IBMCLOUD_BUCKET=${ibmcloud_cos_bucket}" nightwatch
+docker run -it --network="host" --env "SELENIUM_REMOTE_HOST=${selenium_remote_host}" --env "SELENIUM_REMOTE_PORT=${selenium_remote_port}" --env "IBMCLOUD_USER=${ibmcloud_username}" --env "IBMCLOUD_APIKEY=${ibmcloud_apikey}" --env "IBMCLOUD_BUCKET=${ibmcloud_cos_bucket}" --env "IBMCLOUD_REGION=${ibmcloud_cos_region}" nightwatch
 sleep 30
 echo "Stop Selenium local servers"
 cd nightwatch && docker-compose kill && docker-compose rm -vf && cd ..

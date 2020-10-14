@@ -18,7 +18,7 @@ else
   for file in $OUTPUT_FOLDER
   do
     echo "Processing $file file..."
-    curl -X "PUT" "https://s3.us-south.cloud-object-storage.appdomain.cloud/${IBMCLOUD_BUCKET}/${timestamp}-${file}" \
+    curl -X "PUT" "https://s3.${IBMCLOUD_REGION}.cloud-object-storage.appdomain.cloud/${IBMCLOUD_BUCKET}/${timestamp}-${file}" \
          -H "x-amz-acl: public-read" \
          -H "Authorization: Bearer $COS_ADMIN_TOKEN" \
          -H "Content-Type: image/png" \
