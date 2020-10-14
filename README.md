@@ -34,7 +34,8 @@ Clone the repo and set parameters on the file **config.conf**
 - **_selenium_remote_port_** if you have a Remote selenium, add the port (default 4444)
 - **_ibmcloud_username_** user to Log In on IBM Cloud 
 - **_ibmcloud_apikey_** APIKEY generated on IAM Cloud to allow upload the results.
-- **_ibmcloud_cos_bucket_** bucket name to upload the results on IBM Cloud 
+- **_ibmcloud_cos_bucket_** bucket name to upload the results on IBM Cloud
+- **_ibmcloud_cos_region_** Region of the bucket creation.
 
 After set the parameters run the script `./scripts/start.sh`
 The script will be check the parameters file (_config.cong_) and depends of the configuration, if it's not an remote Selenium grid server set, by defaul will be use the Localhost spinning up the Selenium hub and Node, using docker-compose, next a Dockerfile is built will ran the test inside. after the results are ready, if the parameters to upload the results are set, those will be upload to an IBM Cloud Object Storage
